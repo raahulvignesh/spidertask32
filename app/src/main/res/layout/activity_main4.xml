@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rahul.spidertask32.Main3Activity"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/weather2"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/maintemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="33dp"
+            android:text="50"
+            android:textColor="#fff"
+            android:textSize="50dp"/>
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="90dp"
+            android:text="Coimbatore"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/imageViewlarge"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            app:srcCompat="@mipmap/ic_launcher"
+
+            android:layout_marginBottom="13dp"
+            android:layout_alignBottom="@+id/maintemperature"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="TextView"
+            android:textColor="#fff"
+            android:layout_marginLeft="240dp"
+
+            android:layout_alignTop="@+id/city" />
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="19dp"
+        android:text="Pressure:"
+        android:textSize="18dp"
+        android:layout_below="@+id/relativeLayout2"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="10dp"
+        android:text="Humidity:"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:textSize="15dp"
+
+        android:text="5 day forecast" />
+
+    <TextView
+        android:id="@+id/humiditytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/pressuretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1110"
+        android:textSize="18dp"
+
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignLeft="@+id/humiditytext"
+        android:layout_alignStart="@+id/humiditytext" />
+
+    <ImageView
+        android:id="@+id/imageicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@mipmap/ic_launcher"
+
+        android:layout_alignBottom="@+id/relativeLayout2"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Today"
+        android:textSize="20dp"
+
+        android:layout_alignBottom="@+id/submini"
+        android:layout_marginLeft="250dp" />
+    <TextView
+        android:id="@+id/submini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Today"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/imageicon"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginBottom="13dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#000"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/relativeLayout2">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#000"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginTop="460.833dp"
+        android:layout_marginLeft="0dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Wind Speed:"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignBaseline="@+id/pressuretext"
+        android:layout_alignBottom="@+id/pressuretext"
+        android:layout_toRightOf="@+id/pressuretext"
+        android:layout_toEndOf="@+id/pressuretext" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Direct:"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/humiditytext"
+        android:layout_alignBottom="@+id/humiditytext"
+        android:layout_alignLeft="@+id/windspeed"
+        android:layout_alignStart="@+id/windspeed" />
+
+    <TextView
+        android:id="@+id/windspeed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="113"
+        android:textSize="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/windspeed"
+        android:layout_alignBottom="@+id/windspeed"
+        android:layout_toRightOf="@+id/windspeed" />
+
+    <TextView
+        android:id="@+id/winddirection2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWS"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/windspeed"
+        android:layout_alignLeft="@+id/windspeed2"
+        android:layout_alignStart="@+id/windspeed2"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/windspeed" />
+
+
+</RelativeLayout>

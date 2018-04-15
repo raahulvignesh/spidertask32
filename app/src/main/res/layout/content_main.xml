@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rahul.spidertask32.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/weather"
+    >
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/autotext"
+        android:background="#fff"
+        android:hint="City Name"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:id="@+id/imagesearch"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/wea"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEATHER AND FORECAST"
+        android:textColor="#166bcf"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS  >"
+        android:textColor="#fff"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignRight="@+id/imagesearch"
+        android:layout_alignEnd="@+id/imagesearch" />
+
+</RelativeLayout>
+
